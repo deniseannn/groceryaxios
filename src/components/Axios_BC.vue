@@ -8,6 +8,16 @@
             <PSIIndex></PSIIndex>
         
         </div>
+
+        <div id="chart">
+            <covid></covid>
+        
+        </div>
+
+        <div id="line">
+            <practice></practice>
+        
+        </div>
         
     </div>
 </template>
@@ -15,10 +25,12 @@
 <script>
 import axiosExample from '../axiosExample.js'
 import PSIIndex from '../PSIIndex.js'
+import covid from '../covid.js'
+import practice from '../Practice.js'
 
 export default {
     components:{
-        axiosExample,PSIIndex
+        axiosExample,PSIIndex,covid,practice
     }
     
 }
@@ -36,6 +48,16 @@ export default {
   border-color:rgb(155, 84, 84);
   border-width: 1px;
   padding-bottom: 60px;
+  float:left;
+}
+
+#line {
+  height:600px;
+  width:600px;
+  border-style: solid;
+  border-color:rgb(155, 84, 84);
+  border-width: 1px;
+  padding-bottom: 20px;
   float:left;
 }
 </style>
