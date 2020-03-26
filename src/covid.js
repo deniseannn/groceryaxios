@@ -34,7 +34,7 @@ export default{
         }
       }),
     methods:{
-        // add some comments
+        // add some comments DCCSD
     
     fetchData : function(){
         axios.get('http://covid19.soficoop.com/country/us').then(response=>{
