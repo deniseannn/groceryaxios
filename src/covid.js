@@ -34,6 +34,7 @@ export default{
         }
       }),
     methods:{
+        // add some comments
     
     fetchData : function(){
         axios.get('http://covid19.soficoop.com/country/us').then(response=>{
